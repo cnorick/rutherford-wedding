@@ -25,7 +25,20 @@
 	display: inline-block;
 	border-color: $txt-light;
 }
+.btn-dark {
+	font-size: 13px;
+	border: solid 2px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	display: inline-block;
+	border-color: $txt-primary;
+}
 .btn-white:hover, .btn-white:focus {
+	color: $accent-color;
+	border-color: $accent-color;
+}
+.btn-dark:hover, .btn-dark:focus {
 	color: $accent-color;
 	border-color: $accent-color;
 }

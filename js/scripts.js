@@ -101,6 +101,8 @@ $(document).ready(function () {
                 $('header .navicon').css({
                     "top": "34px",
                 });
+                $('#header-rsvp').addClass('btn-white')
+                $('#header-rsvp').removeClass('btn-dark')
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
@@ -113,6 +115,8 @@ $(document).ready(function () {
                 $('header .navicon').css({
                     "top": "48px",
                 });
+                $('#header-rsvp').addClass('btn-dark')
+                $('#header-rsvp').removeClass('btn-white')
             }
         });
     });
