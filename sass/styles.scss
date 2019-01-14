@@ -202,8 +202,12 @@ Navigation
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
-  background: #fff;
-  cursor: pointer
+  background: #000000;
+  cursor: pointer;
+
+  .fixed & {
+    background: #ffffff;
+  }
 }
 .nav-toggle span:before {
   top: -10px
@@ -211,6 +215,7 @@ Navigation
 .nav-toggle span:after {
   bottom: -10px
 }
+
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -294,7 +299,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(39, 40, 63, 0.88);
   z-index: 999;
   width: 100%;
 
