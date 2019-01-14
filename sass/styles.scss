@@ -296,6 +296,10 @@ Hero
   background-color: rgba(55, 36, 40, .88);
   z-index: 999;
   width: 100%;
+
+  a {
+    color: $txt-light;
+  }
 }
 header {
   padding: 50px 0;
@@ -306,7 +310,7 @@ header {
   transition: padding 300ms ease-in-out;
 
   a {
-    color: $txt-light;
+    color: $txt-primary;
     text-transform: uppercase;
     font-size: $nav-font-size;
 
@@ -328,7 +332,6 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
         padding-right: 25px;
 
         &:hover {
