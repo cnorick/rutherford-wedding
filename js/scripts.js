@@ -239,7 +239,12 @@ $(document).ready(function () {
                 .done(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html('');
-                    $('#rsvp-modal').modal('show');
+                    if (coming) {
+                        $('#rsvp-yes-modal').modal('show');
+                    }
+                    else {
+                        $('#rsvp-no-modal').modal('show');
+                    }
                 })
                 .fail(function (data) {
                     console.log(data);
