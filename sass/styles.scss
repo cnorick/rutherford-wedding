@@ -299,7 +299,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(29, 34, 43, 0.88);
+  background-color: $txt-primary;
   z-index: 999;
   width: 100%;
 
@@ -772,6 +772,12 @@ Google map
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+
+  .contact-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 #btn-show-content {
   padding: 20px;
