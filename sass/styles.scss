@@ -299,7 +299,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(112, 129, 161, .88);
+  background-color: rgba(29, 34, 43, 0.88);
   z-index: 999;
   width: 100%;
 
@@ -801,7 +801,6 @@ RSVP form
     .rsvp-btn, .rsvp-no-btn {
       padding: 15px 0;
       border-radius: 3px;
-      // width: 100%;
       font-size: 13px;
     }
     .rsvp-no-btn {
