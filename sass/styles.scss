@@ -413,11 +413,29 @@ Intro
   img {
     width: 100%;
     height: auto;
+    &.meet-pic {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    
+      &.top {
+        object-position: top;
+      }
+      &.bottom {
+        object-position: bottom;
+      }
+      &.center {
+        object-position: center;
+      }
+    }
   }
 }
 #intro p {
   text-align: center;
 }
+
 
 /* ==========================================================================
 Features-stack

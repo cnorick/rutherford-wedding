@@ -54,7 +54,7 @@
                             <li><a href="#instagram">Instagram</a></li>
                             <li><a href="#eng-pics">Engagement</a></li>
                             <li><a href="#wedding-party">Wedding Party</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                            <li><a href="#video-bg">Glimpse of the city</a></li>
                             <li><a href="#registry">Gift Registry</a></li>
                         </ul>
                         <ul class="member-actions">
@@ -78,10 +78,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <!-- <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
+            <div class="col-sm-4 d-none d-sm-block"></div>
+            <!-- <div class="col-sm-4 d-none d-sm-block text-center"><a href="#rsvp"
                                                            class="btn btn-accent btn-large rsvp-btn">RSVP</a></div> -->
-            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 d-none d-sm-block"></div>
         </div>
     </div>
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
@@ -107,14 +107,42 @@
             </div>
         </div>
         <div class="row">
-            <!-- <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div> -->
+            <div class="col-md-3 d-none d-md-block">
+                <img src="img/meeting/1.jpg" class="wp1 meet-pic">
+                <img src="img/meeting/3.jpg" class="wp3 meet-pic top">
+                <img src="img/meeting/7.jpg" class="wp5 meet-pic">
+            </div>
             <div class="col-md-6">
                 <p>
-                    Description of how we met
+                    Sarah and I met the summer before we entered 9th grade. Band
+                    camp was what truly brought us together. We were pretty quickly
+                    friends and spent that entire year building our friendship (and
+                    flirting the best way 14 year olds know how). I even had to
+                    clean her locker out for her at the end of the year. I’ve been
+                    picking up after her ever since!
+                </p>
+                <p>
+                    After a couple of awkward attempts (according to her), I asked
+                    her out on August 24th 2010. I don’t think anyone would have
+                    suspected that we’d be getting married almost nine years later,
+                    but here we are! We have been through everything together and
+                    have continued to grow with each other. From getting our driver
+                    licenses to going to college, from our dorm rooms being 1000
+                    feet apart to living across the country from each other, we
+                    have always chosen to love each other.
+                </p>
+                <p>
+                    We are excited to start this new journey with each other, and
+                    we hope that you will be there to celebrate it with us. 
                 </p>
             </div>
-            <!-- <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div> -->
+            <div class="col-md-3 d-none d-md-block">
+                <img src="img/meeting/2.jpg" class="wp2 meet-pic">
+                <img src="img/meeting/6.jpg" class="wp4 meet-pic">
+                <img src="img/meeting/8.jpg" class="wp6 meet-pic">
+            </div>
         </div>
+        <!--Display for smaller screens-->
         <div class="row">
             <!-- <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
             <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div> -->
@@ -213,7 +241,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
+        <div class="row d-none d-md-block d-xl-none">
             <div class="col-xs-12 section-border section-padding"></div>
         </div>
     </div>
@@ -433,10 +461,11 @@
         </div>
 </section>
 
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
+<section id="video-bg">
+    <div id="bgndVideo" class="player d-none d-md-block"
          data-property="{videoURL:'https://youtu.be/vv53vG5B9rg',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, opacity:1}">
     </div>
+    <!-- <img alt="Smokies"> -->
     <div id="video-content">
         <h5>Sevierville, TN</h5>
         <p>The Great Smoky Mountains</p>
