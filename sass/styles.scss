@@ -419,6 +419,7 @@ Intro
       height: 200px;
       object-fit: cover;
       object-position: center;
+      border-radius: 4px;
     
       &.top {
         object-position: top;
@@ -429,6 +430,65 @@ Intro
       &.center {
         object-position: center;
       }
+    }
+  }
+  .small-meet-img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .fancybox {
+      flex: 1;
+      margin: 1px;
+    }
+
+    .img-wrap {
+      margin-top: 30px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+
+      img {
+        border-radius: 4px;
+        width: 100px;
+        height: (100/1.5) + px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .img-wrap .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .img-wrap i {
+      color: #fff;
+      font-size: 15px;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 6px;
+      right: 6px;
+    }
+    .img-wrap:hover img, .img-wrap:focus img {
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+    .img-wrap:hover .overlay, .img-wrap:focus .overlay {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+      filter: alpha(opacity=1);
+      opacity: 1;
+      z-index: 9;
     }
   }
 }
