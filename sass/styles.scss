@@ -343,7 +343,7 @@ header {
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: $accent-color-hover;
         }
       }
       &:last-child a {
@@ -357,7 +357,7 @@ header {
 
       a {
         &:hover {
-          color: $accent-color;
+          color: $accent-color-hover;
         }
       }
     }
