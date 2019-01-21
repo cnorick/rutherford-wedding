@@ -140,6 +140,26 @@ $(document).ready(function () {
 
     });
 
+
+    /********************** Google Anaytics ***********************/
+    if (document.addEventListener)
+        document.addEventListener('click', handleOutboundLinkClicks, false);
+    else
+        document.attachEvent('onclick', handleOutboundLinkClicks);
+
+    function handleOutboundLinkClicks(e) {
+        var e = window.e || e;
+    
+        if (e.target.tagName !== 'A')
+            return;
+
+        ga('send', 'event', {
+            eventCategory: 'Outbound Link',
+            eventAction: 'click',
+            eventLabel: e.target.href
+        });
+    }
+
     /********************** Social Share buttons ***********************/
     var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
