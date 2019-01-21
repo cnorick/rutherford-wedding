@@ -33,7 +33,7 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp7').waypoint(function () {
-        $('.wp7').addClass('animated fadeInLeft');
+        $('.wp7').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
@@ -43,7 +43,7 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp9').waypoint(function () {
-        $('.wp9').addClass('animated fadeInRight');
+        $('.wp9').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
