@@ -224,10 +224,11 @@ Navigation
   transition: all 300ms ease-in-out
 }
 .nav-toggle.active span {
-  background-color: transparent
+  background-color: transparent;
 }
 .nav-toggle.active span:before, .nav-toggle.active span:after {
-  top: 0
+  top: 0;
+  background-color: #ffffff;
 }
 .nav-toggle.active span:before {
   -moz-transform: rotate(45deg);
