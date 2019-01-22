@@ -133,7 +133,7 @@ $(document).ready(function () {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 90
                     }, 2000);
-                    return false;
+                    return true;
                 }
             }
         });
@@ -142,21 +142,29 @@ $(document).ready(function () {
 
 
     /********************** Google Anaytics ***********************/
-    if (document.addEventListener)
-        document.addEventListener('click', handleOutboundLinkClicks, false);
-    else
-        document.attachEvent('onclick', handleOutboundLinkClicks);
+    document.body.onclick = function(e){
+        e = e || window.event;
+        var from = findParent('a',e.target || e.srcElement);
+        if (from){
+            handleOutboundLinkClicks(from.getAttribute('lab'), from.getAttribute('cat'));
+        }
+      }
+      //find first parent with tagName [tagname]
+      function findParent(tagname,el){
+        while (el){
+          if ((el.nodeName || el.tagName).toLowerCase()===tagname.toLowerCase()){
+            return el;
+          }
+          el = el.parentNode;
+        }
+        return null;
+      }
 
-    function handleOutboundLinkClicks(e) {
-        var e = window.e || e;
-    
-        if (e.target.tagName !== 'A')
-            return;
-
-        ga('send', 'event', {
-            eventCategory: 'Outbound Link',
-            eventAction: 'click',
-            eventLabel: e.target.href
+    function handleOutboundLinkClicks(label, cat) {
+        cat = cat || 'none';
+        gtag('event', 'click', {
+            event_category: cat,
+            event_label: label
         });
     }
 
