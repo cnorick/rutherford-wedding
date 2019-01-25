@@ -640,35 +640,47 @@ Features-stack
 .party
 ========================================================================== */
 .wedding-party {
-  .party-card {
-    margin-bottom: 30px;
-    .party-img {
-      object-fit: cover;
-      object-position: center;
+  .card-pack {
+    display: flex;
+    flex-direction: row;
+    .card-holder {
+      margin-bottom: 30px;
+      .party-card {
+        height: 100%;
+        .party-img {
+          object-fit: cover;
+          object-position: center;
 
-      &.top {
-        object-position: top;
+          &.top {
+            object-position: top;
+          }
+          &.bottom {
+            object-position: bottom;
+          }
+          &.center {
+            object-position: center;
+          }
+        }
+        .party-name {
+          font-family: 'Cedarville Cursive', cursive;
+          text-transform: none;
+          margin-bottom: 0;
+          color: $txt-primary;
+          font-size: 17pt;
+        }
+        .party-title {
+          font-size: 8pt;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          color: $txt-secondary;
+        }
+        .card-body {
+          height: 100%;
+          p {
+            padding-bottom: 0;
+          }
+        }
       }
-      &.bottom {
-        object-position: bottom;
-      }
-      &.center {
-        object-position: center;
-      }
-
-    }
-    .party-name {
-      font-family: 'Cedarville Cursive', cursive;
-      text-transform: none;
-      margin-bottom: 0;
-      color: $txt-primary;
-      font-size: 17pt;
-    }
-    .party-title {
-      font-size: 8pt;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      color: $txt-secondary;
     }
   }
 }
