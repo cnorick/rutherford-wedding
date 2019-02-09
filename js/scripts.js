@@ -226,13 +226,13 @@ $(document).ready(function () {
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            // end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('2019-06-15T22:00:00.000-04:00'),
 
             // Event Address
             address: '805 Hardin Ln, Sevierville, TN 37862',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues contact Mr. Nathan Orick at +18658515520."
+            description: "We can't wait to see you on the day of the wedding. For any questions or issues, contact Nathan Orick at +18658515520."
         }
     });
 
@@ -255,7 +255,16 @@ $(document).ready(function () {
     function rsvp(coming) {
         var form = $('#rsvp-form');
         var data = $(form).serialize();
-        data += "&coming=" + String(coming);
+        if (coming) {
+            data += "&coming";
+        }
+
+        var nativeForm = form[0];
+        for (var i = 0; i < nativeForm.elements.length; i++) {
+            if (nativeForm.elements[i].value === '' && nativeForm.elements[i].hasAttribute('required')) {
+                return false;
+            }
+        }
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We\'re saving your details.'));
 
