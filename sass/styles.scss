@@ -955,12 +955,18 @@ RSVP form
   padding-bottom: 140px;
   .rsvp-form {
     .rsvp-btn, .rsvp-no-btn {
-      padding: 15px 0;
-      border-radius: 3px;
-      font-size: 13px;
+      button {
+        border-radius: 10px;
+        font-size: 13px;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 8px;
+      }
     }
     .rsvp-no-btn {
-      background-color: #ff415c;
+      button {
+        background-color: #ff415c;
+      }
     }
     .form-input-group {
       width: 100%;
