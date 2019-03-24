@@ -625,32 +625,58 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                                <i class="fa fa-user"></i><input name="name1" class="guest-input"
+                                                                 placeholder="Your Name"
+                                                                 required id="primary-name">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                                <div class="form-input-group">
-                                    <i class="fa fa-users"></i><input type="number" name="number" class="" min="0" max="4" placeholder="Number attending (including you)"
-                                        required>
-                                </div>
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name2" class="guest-input"
+                                                                 placeholder="Your Guest"
+                                                                 id="primary-guest">
                             </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="guest-names-collapse">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name3" class="guest-input"
+                                                                 placeholder="Your 2nd Guest"
+                                                                 id="primary-guest">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name4" class="guest-input"
+                                                                 placeholder="Your 3rd Guest"
+                                                                 id="primary-guest">
+                            </div>
+                        </div>
+                    </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
+                                                                     placeholder="Your Email (For Confirmation)"
                                                                      required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
+                                <i class="fa fa-key"></i><input type="text" name="invite_code" id="invite_code"
+                                                                class=""
+                                                                placeholder="Invite Code"
                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-music"></i><input type="text" name="song" class="" placeholder="What songs will get you dancing?">
                             </div>
                         </div>
                     </div>

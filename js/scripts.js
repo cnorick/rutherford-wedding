@@ -168,6 +168,20 @@ $(document).ready(function () {
         });
     }
 
+    /********************** Guest Names Collapse ***********************/
+    var collapse = $('#guest-names-collapse');
+    var primaryGuest = $('#primary-guest');
+
+    primaryGuest.focus(function() {
+        collapse.collapse('show');
+    });
+
+    primaryGuest.blur(function() {
+        if(!primaryGuest.val()) {
+            collapse.collapse('hide');
+        }
+    });
+
     /********************** Social Share buttons ***********************/
     var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
@@ -252,12 +266,23 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+    function countGuests() {
+        var count = 0;
+        $('.guest-input').each(function() {
+            if($(this).val()) {
+                count++;
+            }
+        });
+        return count;
+    }
+
     function rsvp(coming) {
         var form = $('#rsvp-form');
         var data = $(form).serialize();
         if (coming) {
             data += "&coming";
         }
+        data += "&number=" + countGuests();
 
         var nativeForm = form[0];
         for (var i = 0; i < nativeForm.elements.length; i++) {
