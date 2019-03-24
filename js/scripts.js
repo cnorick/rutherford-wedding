@@ -230,7 +230,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Nathan and Sarah's Wedding",
+            title: "Sarah and Nathan's Wedding",
 
             // Event start date
             start: new Date('2019-06-15T18:00:00.000-04:00'),
