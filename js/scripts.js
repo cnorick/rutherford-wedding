@@ -236,7 +236,7 @@ $(document).ready(function () {
             start: new Date('2019-06-15T18:00:00.000-04:00'),
 
             // Event duration (IN MINUTES)
-            duration: 4 * 60,
+            // duration: 4 * 60,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
@@ -246,7 +246,7 @@ $(document).ready(function () {
             address: '805 Hardin Ln, Sevierville, TN 37862',
 
             // Event Description
-            description: "We can't wait to see you on the day of the wedding. For any questions or issues, contact Nathan Orick at +18658515520."
+            description: "We can't wait to see you on the day of the wedding. For any questions or issues, contact Nathan Orick at +18658515520"
         }
     });
 
