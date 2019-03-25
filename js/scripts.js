@@ -254,6 +254,10 @@ $(document).ready(function () {
 
 
     /********************** RSVP **********************/
+    $('#rsvp-help-toggle').click(function() {
+        $('#rsvp-code-help-text').collapse('toggle');
+    });
+
     $('#rsvp-yes').click(function () {
         rsvp(true);
     });

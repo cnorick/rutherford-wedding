@@ -996,11 +996,12 @@ RSVP form
       }
     }
 
-    .rsvp-help-toggle {
+    .form-input-group i.rsvp-help-toggle {
       position: absolute;
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
+      font-size: 19px;
     }
 
     .rsvp-help-collapse {
@@ -1055,6 +1056,9 @@ RSVP form
         -webkit-border-radius: 6px;
         border-radius: 6px;
         border: none;
+      }
+      &.invite-code-group input {
+        width: 90%;
       }
       input::-webkit-input-placeholder {
         color: $form-placeholder;
