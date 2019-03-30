@@ -171,14 +171,17 @@ $(document).ready(function () {
     /********************** Guest Names Collapse ***********************/
     var collapse = $('#guest-names-collapse');
     var primaryGuest = $('#primary-guest');
+    var warningText = $('#rsvp-warning-text')
 
     primaryGuest.focus(function() {
         collapse.collapse('show');
+        warningText.collapse('show');
     });
 
     primaryGuest.blur(function() {
         if(!primaryGuest.val()) {
             collapse.collapse('hide');
+            warningText.collapse('hide');
         }
     });
 
@@ -281,6 +284,8 @@ $(document).ready(function () {
     }
 
     function rsvp(coming) {
+        $('#rsvp-warning-text').collapse('hide');
+        
         var form = $('#rsvp-form');
         var data = $(form).serialize();
         if (coming) {
