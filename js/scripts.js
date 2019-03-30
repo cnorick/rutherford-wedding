@@ -185,6 +185,15 @@ $(document).ready(function () {
         }
     });
 
+    /**************************** FAQ *********************************/
+    var faqButton = $('#faq-button');
+    var faqContainer = $('#faq-container');
+
+    faqButton.click(function() {
+        faqContainer.collapse('show');
+        faqButton.hide();
+    });
+
     /********************** Social Share buttons ***********************/
     var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');

@@ -1094,6 +1094,41 @@ Registry
 }
 
 /* ==========================================================================
+FAQ
+========================================================================== */
+.faq-container {
+  .accordion {
+    .card {
+      .card-header {
+        background-color: #f8f9fa;
+
+        button {
+          border: none;
+          background-color: inherit;
+          color: $accent-color;
+
+          &:hover {
+            background-color: inherit;
+            color: $accent-color-hover;
+          }
+          &:focus {
+            border: none;
+          }
+        }
+      }
+      .card-body {
+        p {
+          &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
 Footer
 ========================================================================== */
 footer {
