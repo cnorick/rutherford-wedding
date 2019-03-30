@@ -3,7 +3,7 @@
 
 flags="--delete"
 # flags+=" --acl public-read"
-flags+=" --exclude \".git/*\""
+flags+=" --exclude '.git/*'"
 
 gulp
 
